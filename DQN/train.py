@@ -2,7 +2,7 @@ import argparse, pickle
 from tqdm import tqdm
 from keras.models import load_model
 from DQN_agent import *
-
+import time
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # intake MinesweeperEnv parameters, beginner mode by default
@@ -35,7 +35,7 @@ def main():
 
     for episode in tqdm(range(1, params.episodes+1), unit='episode'):
         agent.tensorboard.step = episode
-
+        start = time.perf_counter()
         env.reset()
         episode_reward = 0
         past_n_wins = env.n_wins
@@ -57,7 +57,7 @@ def main():
 
         progress_list.append(env.n_progress) # n of non-guess moves
         ep_rewards.append(episode_reward)
-
+        end = time.perf_counter()
         if env.n_wins > past_n_wins:
             wins_list.append(1)
         else:
@@ -79,7 +79,7 @@ def main():
                 epsilon = agent.epsilon)
 
             print(f'Episode: {episode}, Median progress: {med_progress}, Median reward: {med_reward}, Win rate : {win_rate}')
-
+            print("Finished in " + str(end-start))
         if not episode % SAVE_MODEL_EVERY:
             with open(f'replay/{MODEL_NAME}.pkl', 'wb') as output:
                 pickle.dump(agent.replay_memory, output)
