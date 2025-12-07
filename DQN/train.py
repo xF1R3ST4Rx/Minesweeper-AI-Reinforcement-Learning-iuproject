@@ -32,13 +32,15 @@ def main():
 
     progress_list, wins_list, ep_rewards = [], [], []
     n_clicks = 0
-
+    start_time = None
     for episode in tqdm(range(1, params.episodes+1), unit='episode'):
         agent.tensorboard.step = episode
-        start = time.perf_counter()
         env.reset()
         episode_reward = 0
         past_n_wins = env.n_wins
+
+        if start_time is None:
+            start_time = time.perf_counter()
 
         done = False
         while not done:
@@ -57,8 +59,10 @@ def main():
 
         progress_list.append(env.n_progress) # n of non-guess moves
         ep_rewards.append(episode_reward)
-        end = time.perf_counter()
         if env.n_wins > past_n_wins:
+            end = time.perf_counter()
+            elapsed = (end - start_time)
+            print(f"Time elapsed: {elapsed:.2f} seconds")
             wins_list.append(1)
         else:
             wins_list.append(0)
@@ -79,7 +83,6 @@ def main():
                 epsilon = agent.epsilon)
 
             print(f'Episode: {episode}, Median progress: {med_progress}, Median reward: {med_reward}, Win rate : {win_rate}')
-            print("Finished in " + str(end-start))
         if not episode % SAVE_MODEL_EVERY:
             with open(f'replay/{MODEL_NAME}.pkl', 'wb') as output:
                 pickle.dump(agent.replay_memory, output)
