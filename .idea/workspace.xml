@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80aaeef4-4dfe-49f0-bac2-1640f8962d52" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DQN/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/DQN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DQN/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DQN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minesweeper_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/minesweeper_env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_tensorboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_tensorboard.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my_tensorboard2.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_tensorboard2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +53,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.DQN_agent">
+  <component name="RunManager" selected="Python.train">
     <configuration name="DQN_agent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Minesweeper-AI-Reinforcement-Learning-iuproject" />
       <option name="ENV_FILES" value="" />
@@ -96,8 +102,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Minesweeper-AI-Reinforcement-Learning-iuproject" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DQN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DQN/train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.train" />
         <item itemvalue="Python.DQN_agent" />
       </list>
     </recent_temporary>
@@ -122,6 +152,11 @@
       <workItem from="1765129730226" duration="1194000" />
       <workItem from="1765131839238" duration="1433000" />
       <workItem from="1765133489612" duration="976000" />
+      <workItem from="1765222920273" duration="3107000" />
+      <workItem from="1765231689384" duration="1933000" />
+      <workItem from="1765234645897" duration="2150000" />
+      <workItem from="1765759449330" duration="1108000" />
+      <workItem from="1765760587138" duration="3055000" />
     </task>
     <servers />
   </component>
@@ -129,8 +164,8 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Minesweeper_AI_Reinforcement_Learning_iuproject$train.coverage" NAME="train Coverage Results" MODIFIED="1765093970899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DQN" />
+    <SUITE FILE_PATH="coverage/Minesweeper_AI_Reinforcement_Learning_iuproject$train.coverage" NAME="train Coverage Results" MODIFIED="1765762875423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DQN" />
     <SUITE FILE_PATH="coverage/Minesweeper_AI_Reinforcement_Learning_iuproject$test.coverage" NAME="test Coverage Results" MODIFIED="1765129809247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DQN" />
-    <SUITE FILE_PATH="coverage/Minesweeper_AI_Reinforcement_Learning_iuproject$DQN_agent.coverage" NAME="DQN_agent Coverage Results" MODIFIED="1765132651245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DQN" />
+    <SUITE FILE_PATH="coverage/Minesweeper_AI_Reinforcement_Learning_iuproject$DQN_agent.coverage" NAME="DQN_agent Coverage Results" MODIFIED="1765224416400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DQN" />
   </component>
 </project>

@@ -1,4 +1,6 @@
 import argparse
+
+import pg
 from tqdm import tqdm
 from keras.models import load_model
 from MinesweeperAgentWeb import *

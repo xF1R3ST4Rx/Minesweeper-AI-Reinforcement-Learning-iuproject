@@ -2,7 +2,6 @@ import argparse, pickle
 from tqdm import tqdm
 from keras.models import load_model
 from DQN_agent import *
-import time
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # intake MinesweeperEnv parameters, beginner mode by default
@@ -38,10 +37,6 @@ def main():
         env.reset()
         episode_reward = 0
         past_n_wins = env.n_wins
-
-        if start_time is None:
-            start_time = time.perf_counter()
-
         done = False
         while not done:
             current_state = env.state_im
@@ -60,9 +55,6 @@ def main():
         progress_list.append(env.n_progress) # n of non-guess moves
         ep_rewards.append(episode_reward)
         if env.n_wins > past_n_wins:
-            end = time.perf_counter()
-            elapsed = (end - start_time)
-            print(f"Time elapsed: {elapsed:.2f} seconds")
             wins_list.append(1)
         else:
             wins_list.append(0)
