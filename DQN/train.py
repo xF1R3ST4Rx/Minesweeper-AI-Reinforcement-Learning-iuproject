@@ -2,6 +2,7 @@ import argparse, pickle
 from tqdm import tqdm
 from keras.models import load_model
 from DQN_agent import *
+import time
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 
 # intake MinesweeperEnv parameters, beginner mode by default
@@ -23,12 +24,12 @@ def parse_args():
 params = parse_args()
 
 AGG_STATS_EVERY = 100 # calculate stats every 100 games for tensorboard
-SAVE_MODEL_EVERY = 10_000 # save model and replay every 10,000 episodes
+SAVE_MODEL_EVERY = 100_001 # save model and replay every 10,000 episodes
 
 def main():
     env = MinesweeperEnv(params.width, params.height, params.n_mines)
     agent = DQNAgent(env, params.model_name)
-
+    start = time.perf_counter()
     progress_list, wins_list, ep_rewards = [], [], []
     n_clicks = 0
     start_time = None
@@ -73,8 +74,9 @@ def main():
                 reward_med = med_reward,
                 learn_rate = agent.learn_rate,
                 epsilon = agent.epsilon)
-
+            end = time.perf_counter()
             print(f'Episode: {episode}, Median progress: {med_progress}, Median reward: {med_reward}, Win rate : {win_rate}')
+            print("Time took: " + str(end-start))
         if not episode % SAVE_MODEL_EVERY:
             with open(f'replay/{MODEL_NAME}.pkl', 'wb') as output:
                 pickle.dump(agent.replay_memory, output)

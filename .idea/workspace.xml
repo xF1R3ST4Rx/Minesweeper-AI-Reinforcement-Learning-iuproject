@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80aaeef4-4dfe-49f0-bac2-1640f8962d52" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN/DQN.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/DQN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DQN/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/DQN/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/DQN/train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minesweeper_env.py" beforeDir="false" afterPath="$PROJECT_DIR$/minesweeper_env.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_tensorboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_tensorboard.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_tensorboard2.py" beforeDir="false" afterPath="$PROJECT_DIR$/my_tensorboard2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,6 +152,8 @@
       <workItem from="1765234645897" duration="2150000" />
       <workItem from="1765759449330" duration="1108000" />
       <workItem from="1765760587138" duration="3055000" />
+      <workItem from="1766181323422" duration="481000" />
+      <workItem from="1766181824674" duration="264000" />
     </task>
     <servers />
   </component>
@@ -164,7 +161,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Minesweeper_AI_Reinforcement_Learning_iuproject$train.coverage" NAME="train Coverage Results" MODIFIED="1765762875423" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DQN" />
+    <SUITE FILE_PATH="coverage/Minesweeper_AI_Reinforcement_Learning_iuproject$train.coverage" NAME="train Coverage Results" MODIFIED="1766182016545" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DQN" />
     <SUITE FILE_PATH="coverage/Minesweeper_AI_Reinforcement_Learning_iuproject$test.coverage" NAME="test Coverage Results" MODIFIED="1765129809247" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DQN" />
     <SUITE FILE_PATH="coverage/Minesweeper_AI_Reinforcement_Learning_iuproject$DQN_agent.coverage" NAME="DQN_agent Coverage Results" MODIFIED="1765224416400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DQN" />
   </component>
